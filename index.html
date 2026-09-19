@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoodabrids Pictures — photography studio in Port Harcourt.">
+  <title>Hoodabrids Pictures | Photography Studio</title>
+  <style>
+    :root{
+      --bg:#071313; --panel:#0d1d1d; --text:#f6f2e9; --muted:#b8c0bb;
+      --accent:#d8b45a; --accent2:#f0d98c; --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{width:100%;display:block}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,19,19,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:.5px;font-size:1.05rem}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;font-size:.92rem;color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .hero{min-height:100svh;display:grid;place-items:center;padding:105px 0 60px;background:
+      linear-gradient(180deg,rgba(0,0,0,.18),rgba(7,19,19,.96)),
+      url("images/photo-3.jpg") center/cover no-repeat}
+    .hero-card{max-width:720px;text-align:center;padding:34px 22px}
+    .eyebrow{color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,9vw,5.6rem);line-height:.98;margin:16px 0}
+    .hero p{color:#e5e1d8;max-width:610px;margin:0 auto 26px;font-size:1.05rem}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 20px;border-radius:999px;font-weight:750;border:1px solid var(--accent);display:inline-block}
+    .btn.primary{background:var(--accent);color:#101313}
+    .btn.secondary{background:rgba(0,0,0,.28)}
+    section{padding:80px 0}
+    .section-head{margin-bottom:28px}
+    .section-head small{color:var(--accent2);text-transform:uppercase;letter-spacing:2px;font-weight:700}
+    .section-head h2{font-size:clamp(2rem,5vw,3.2rem);margin-top:5px}
+    .section-head p{color:var(--muted);max-width:650px}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .gallery .wide{grid-column:span 2}
+    .gallery img{height:430px;object-fit:cover;border-radius:18px}
+    .gallery .wide img{height:560px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:18px}
+    .card h3{margin-bottom:8px}.card p{color:var(--muted)}
+    .offer{background:linear-gradient(135deg,#172b26,#2a2415);border:1px solid rgba(216,180,90,.35);border-radius:24px;padding:32px}
+    .offer strong{color:var(--accent2);font-size:2rem}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-box{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .contact-box p{color:var(--muted);margin-top:6px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+    .float{position:fixed;right:18px;bottom:18px;z-index:20;background:#25D366;color:white;padding:13px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    @media(max-width:720px){
+      .navlinks{display:none}
+      .gallery{grid-template-columns:1fr}
+      .gallery .wide{grid-column:auto}
+      .gallery img,.gallery .wide img{height:430px}
+      .cards,.contact{grid-template-columns:1fr}
+      section{padding:65px 0}
+      .hero{min-height:92svh}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#top">Hoodabrids <span>Pictures</span></a>
+    <div class="navlinks">
+      <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="eyebrow">Photography Studio · Port Harcourt</div>
+      <h1>Moments worth remembering.</h1>
+      <p>We don't just take pictures. We preserve the moments people never want to forget.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/2347063688488?text=Hello%20Hoodabrids%20Pictures%2C%20I'd%20like%20to%20book%20a%20session.">Book on WhatsApp</a>
+        <a class="btn secondary" href="#work">View Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <small>Selected work</small>
+        <h2>Captured beautifully.</h2>
+        <p>A preview of recent portrait and celebration photography.</p>
+      </div>
+      <div class="gallery">
+        <div class="wide"><img src="images/photo-3.jpg" alt="Couple in traditional attire"></div>
+        <div><img src="images/photo-1.jpg" alt="Portrait session in green traditional attire"></div>
+        <div><img src="images/photo-2.jpg" alt="Portrait in traditional attire"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <small>What we capture</small>
+        <h2>Photography for your moments.</h2>
+      </div>
+      <div class="cards">
+        <div class="card"><h3>Wedding Photography</h3><p>Preserve the details, emotions and memories of your special day.</p></div>
+        <div class="card"><h3>Portrait Sessions</h3><p>Stylish individual and couple portraits created around your personality.</p></div>
+        <div class="card"><h3>Events & Celebrations</h3><p>Professional coverage for important celebrations and occasions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offer">
+    <div class="wrap">
+      <div class="offer">
+        <strong>20% off wedding packages</strong>
+        <p style="margin-top:8px;color:#ddd">Ask about the current wedding package promotion and availability.</p>
+        <div style="margin-top:20px"><a class="btn primary" href="https://wa.me/2347063688488?text=Hello%20Hoodabrids%20Pictures%2C%20I'd%20like%20to%20ask%20about%20the%20wedding%20package.">Ask on WhatsApp</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <small>About the studio</small>
+        <h2>Hoodabrids Pictures</h2>
+        <p>A photography studio serving clients in Port Harcourt. This demo is designed to make it easy for visitors to view the work and start a booking conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><small>Get in touch</small><h2>Let's create something memorable.</h2></div>
+      <div class="contact">
+        <div class="contact-box"><h3>Call / WhatsApp</h3><p>0706 368 8488</p><p><a href="https://wa.me/2347063688488">Open WhatsApp →</a></p></div>
+        <div class="contact-box"><h3>Studio</h3><p>14 Rumuepirikom/Iwofe Rd,<br>Rumuafrikom, Port Harcourt 500102, Rivers</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float" href="https://wa.me/2347063688488?text=Hello%20Hoodabrids%20Pictures%2C%20I'd%20like%20to%20make%20an%20enquiry.">WhatsApp</a>
+
+<footer><div class="wrap">© 2026 Hoodabrids Pictures · Demo website concept</div></footer>
+</body>
+</html>
