@@ -71,6 +71,63 @@
   </style>
 </head>
 <body>
+  <!-- NAVIGATION -->
+<style>
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9998;
+  background: #071f1d;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 14px 20px;
+}
+
+.navbar .nav-wrap {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #dce7e5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #d4af37;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 10px;
+  }
+
+  .navbar .nav-wrap {
+    gap: 14px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+}
+</style>
+
+<nav class="navbar">
+  <div class="nav-wrap">
+    <a href="#gallery">Gallery</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Book Now</a>
+  </div>
+</nav>
+<!-- END NAVIGATION -->
 <header>
   <nav class="wrap">
     <a class="brand" href="#top">Hoodabrids <span>Pictures</span></a>
